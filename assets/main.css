@@ -1,0 +1,227 @@
+/* .app{
+    
+} */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.margin__top{
+    margin-top: 20px;
+}
+.padding{
+    padding: 0 12px;
+}
+html{
+    font-size: 62.5%;
+    /* để như này thì 1rem bằng 10px */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(22, 216, 70); */
+    height: 40px;
+    align-items: center;
+    
+    
+}
+.far__header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+.navbar__item{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    
+}
+.navbar{
+    height: 100%;
+}
+.navbar__list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar__item--green{
+    background-color:rgb(6, 156, 6) ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-right: 0;
+}
+.subnav{
+    position: absolute;
+    background-color: white;
+    padding: 10px 20px;
+    border-right: 2px solid black;
+    display: none;
+    top: 40px;
+    animation: ani linear 0.3s;
+}
+.subnav::before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    right: 0;
+    top: -10px;
+    
+}
+@keyframes ani {
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.navbar__item:hover{
+    color: green;
+}
+.navbar__item:hover .subnav{
+    color: black;
+    display: block;
+}
+.subnav__item{
+    list-style: none;
+    line-height: 25px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.logo h2{
+    font-size: 3rem;
+    
+}
+.logo img{
+    width: 20px;
+    margin-right: 10px;
+}
+.banner{
+    background-image: url("./img/327103865_714861713528305_3017196684816754847_n.jpg");
+    padding-top: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+.baner__content{
+    position: relative;
+   bottom: 150px;
+    
+}
+.baner__content h1{
+    font-size: 6rem;
+    margin: 0;
+}
+.baner__content h2{
+    margin: 20px 0;
+    color: white;
+    font-size: 3rem;
+}
+.baner__content p{
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 60px;
+}
+.baner__content a{
+    padding: 20px 50px;
+    text-decoration: none;
+    
+    /* display: block; */
+    color: white;
+    font-size: 1.6rem;
+    border: 1px solid white;
+}
+.baner__content a:hover{
+    background-color: orange;
+    box-shadow: 0 0px 10px 10px orange;
+}
+.container__image{
+    background-image: url("./img/317112548_1252338962016785_6564333373665280881_n.jpg");
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.about{
+    border-left: 4px solid rgb(6, 156, 6);
+    padding-left: 20px;
+}
+.about h2{
+    margin-top: 20px;
+    font-size: 4rem;
+}
+.about__title{
+    margin-bottom: 50px;
+    color: rgb(6, 156, 6);
+}
+.about__our-green{
+    background-color: rgb(6, 156, 6);
+    padding: 10px 0;
+}
+.about__our{
+    
+    text-align: center;
+}
+.about__bottom{
+    background-color: rgb(243, 236, 236);
+    padding: 10px;
+}
+.option{
+    background-color: rgb(243, 236, 236);
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+.option__icon{
+    font-size: 6rem;
+    color: rgb(6, 156, 6);
+    margin-right: 15px;
+}
+.option__read{
+    color: rgb(6, 156, 6);
+}
+.option__lorem{
+    margin: 15px 0;
+}
+.list{
+    height: 200px;
+    background-size: cover;
+    background-image: url("../assets/img/395054116_1695016284307853_2122984877863360159_n.jpg");
+}
+.footer{
+    background-color: rgb(6, 156, 6);
+    
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.footer__item{
+    display: inline-block;
+    color: white;
+    font-size: 4rem;
+    margin-right: 10px;
+}
+.footer__name{
+    color: white;
+    font-size: 2rem;
+}
